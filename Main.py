@@ -15,12 +15,12 @@ x_test = x_test / 255.0    # Normalize the test images to [0, 1]
 x_train = x_train.reshape(-1, 28, 28, 1)
 x_test = x_test.reshape(-1, 28, 28, 1)
 
-# Convert labels to categorical (one-hot encoding),
-y_train = tf.keras.utils.to_categorical(y_train, 10)
+# Convert labels to categorical (one-hot encoding)
+y_train = tf.keras.utils.to_categorical(y_train, 10) #optional(you can directly import keras.utils to reduce the size of the file)
 y_test = tf.keras.utils.to_categorical(y_test, 10)
 
 # Build the CNN model
-model = models.Sequential([
+model = models.Sequential([ #every layer is sequentially placed over one another so the outputs of one layer flows onto the next one.
     layers.Conv2D(32, (3, 3), activation='relu', input_shape=(28, 28, 1)), #the 32 represent the number of filters being applied to the layer of neurons which includes edges, textures etc, Using RELU (rectified linear unit) activation to avoid non-linearity.
     layers.MaxPooling2D((2, 2)),#converting into 2 by 2 windows 
     layers.Conv2D(64, (3, 3), activation='relu'),#again applying 64 more filters to improve accuracy with relu activation to avoid non linearity
