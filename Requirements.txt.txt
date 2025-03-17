@@ -1,0 +1,5 @@
+python==3.9.0
+tensorflow==2.19.0
+keras
+numpy
+matplotlib
