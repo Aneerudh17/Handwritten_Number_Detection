@@ -1,5 +1,8 @@
 # Handwritten Number Detection
 ![alt image](https://github.com/Aneerudh17/Handwritten_Number_Detection/blob/main/Test_Accuracy.png)
+![alt image](https://github.com/Aneerudh17/Handwritten_Number_Detection/blob/main/prediction1.png)
+![alt image](https://github.com/Aneerudh17/Handwritten_Number_Detection/blob/main/Prediction2.png)
+![alt image](https://github.com/Aneerudh17/Handwritten_Number_Detection/blob/main/prediction3.png)
 ### Features:
 - Data preprocessing: Clean and prepare the dataset for model training.
 - Model creation: Build a neural network model using TensorFlow.
@@ -28,4 +31,5 @@
    python -m venv .venv
 OR
 You can simply install it using pip: (make sure to upgrade pip to install the latest release of the individual packages)
-  python -m pip install tensorflow matplotlib numpy
+  ```bash
+python -m pip install tensorflow matplotlib numpy
