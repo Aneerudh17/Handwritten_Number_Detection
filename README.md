@@ -28,8 +28,9 @@
 ### Installing the Requirements
 (optional, ive created a virtual environment to install the necessary modules to avoid issues)
 1. Create a virtual environment:
-   ```bash
-   python -m venv .venv
+```bash
+python -m venv .venv
+```
 OR
 You can simply install it using pip: (make sure to upgrade pip to install the latest release of the individual packages)
   ```bash
